@@ -1,5 +1,9 @@
 # DiffImp
 
+## Prepare dataset for ML models ##
+
+We construct the benchmark machine learning datasets from the MIMIC III clinical database following https://github.com/YerevaNN/mimic3-benchmarks
+
 ## BERT Instruction ##
 
 **Run the bert.py file** <br />
