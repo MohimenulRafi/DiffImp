@@ -2,8 +2,9 @@
 
 ## Prepare dataset for ML models ##
 
-We construct the benchmark machine learning datasets from the MIMIC III clinical database following https://github.com/YerevaNN/mimic3-benchmarks
-The eICU benchmark dataset was used from https://github.com/mostafaalishahi/eICU_Benchmark
+We construct the benchmark machine learning datasets from the MIMIC III clinical database following https://github.com/YerevaNN/mimic3-benchmarks <br />
+The eICU benchmark dataset was used from https://github.com/mostafaalishahi/eICU_Benchmark <br />
+Please follow the instructions from the benchmark github repository to build the benchmark dataset.
 
 ## BERT Instruction ##
 
