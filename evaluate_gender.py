@@ -85,7 +85,7 @@ variable='gender_race'
 out_variable='gender_race'
 
 ################### Without demographic info #####################
-prediction_file='/home/danfeng/DifferentialBias/ihm_prediction/'+model_name+'_'+run+'/'+dataset+'/ihm_nodemography.csv'
+prediction_file='/home/DifferentialImpact/ihm_prediction/'+model_name+'_'+run+'/'+dataset+'/ihm_nodemography.csv'
 
 df_nd=pd.read_csv(prediction_file) #nd -> no demographic info
 
@@ -104,7 +104,7 @@ score(y_true, y_pred, y_prob)
 
 ################### With demographic info #####################
 
-prediction_file='/home/danfeng/DifferentialBias/ihm_prediction/'+model_name+'_'+run+'/'+dataset+'/ihm_'+variable+'.csv'
+prediction_file='/home/DifferentialImpact/ihm_prediction/'+model_name+'_'+run+'/'+dataset+'/ihm_'+variable+'.csv'
 
 df=pd.read_csv(prediction_file)
 
@@ -121,7 +121,7 @@ print('##### Overall scores with demographic information #####')
 score(y_true, y_pred, y_prob)
 
 
-demographic_file='/home/danfeng/Data/eICU/ihm_demography/demography_test.csv'
+demographic_file='/home/Data/eICU/ihm_demography/demography_test.csv'
 df_demography=pd.read_csv(demographic_file)
 
 gender=df_demography['Gender']
@@ -261,5 +261,5 @@ print('##### Scores for female with demographic information #####')
 score(y_true_female, y_pred_female, y_prob_female)
 
 
-with open('/home/danfeng/DifferentialBias/ihm_result/'+model_name+'_'+run+'/'+dataset+'/scores_'+out_variable+'.json', 'w') as fp:
+with open('/home/DifferentialImpact/ihm_result/'+model_name+'_'+run+'/'+dataset+'/scores_'+out_variable+'.json', 'w') as fp:
     json.dump(score_dict, fp)
