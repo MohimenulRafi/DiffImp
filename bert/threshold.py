@@ -20,7 +20,7 @@ variable='gender_race'
 
 preds=[]
 test_y=[]
-f=open('/home/danfeng/DifferentialBias/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/valid_prediction_probs.txt', 'r')
+f=open('/home/DifferentialImpact/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/valid_prediction_probs.txt', 'r')
 for line in f:
     line=line.strip()
     tokens=line.split()
@@ -90,8 +90,8 @@ print('Ranked thresholds: ', str(tr_list))
 preds=[]
 test_y=[]
 text_list=[]
-f=open('/home/danfeng/DifferentialBias/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/prediction_probs.txt', 'r')
-#f=open('/home/danfeng/Foundation/Prediction/'+model_dataset+'/prediction_probs_label_text.txt', 'r')
+f=open('/home/DifferentialImpact/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/prediction_probs.txt', 'r')
+#f=open('/home/Foundation/Prediction/'+model_dataset+'/prediction_probs_label_text.txt', 'r')
 for line in f:
     line=line.strip()
     tokens=line.split()
@@ -158,7 +158,7 @@ for i in range(3):
         best_threshold=tr
 
 
-'''f=open('/home/danfeng/Foundation/Results/'+model_dataset+'_wrong_preds.txt', 'w')
+'''f=open('/home/Foundation/Results/'+model_dataset+'_wrong_preds.txt', 'w')
 prediction=0
 for i in range(len(preds)):
     if preds[i]<best_threshold:
@@ -171,7 +171,7 @@ for i in range(len(preds)):
 
 f.close()
 
-f=open('/home/danfeng/Foundation/Results/'+model_dataset+'_text.txt', 'w')
+f=open('/home/Foundation/Results/'+model_dataset+'_text.txt', 'w')
 prediction=0
 for i in range(len(preds)):
     if preds[i]<best_threshold:
