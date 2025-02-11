@@ -54,12 +54,12 @@ variable='gender_race'
 
 pred_dict={}
 pred_list=[]
-f=open('/home/danfeng/DifferentialBias/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/prediction_probs.txt', 'r')
+f=open('/home/DifferentialImpact/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/prediction_probs.txt', 'r')
 writeLabel(f, threshold, pred_dict, pred_list)
 f.close()
 
 
-fw=open('/home/danfeng/DifferentialBias/ihm_prediction/'+model_name+'_'+run+'/'+dataset+'/ihm_'+variable+'.csv', 'w')
+fw=open('/home/DifferentialImpact/ihm_prediction/'+model_name+'_'+run+'/'+dataset+'/ihm_'+variable+'.csv', 'w')
 fw.write('Prediction,TrueLabel,CorrectFlag,Prob\n')
 
 '''demography_dict={}
