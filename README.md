@@ -28,3 +28,15 @@ dataset='mimic3' <br />
 variable='gender' <br />
 
 python3 write_label.py
+
+**Run the evaluate_gender.py, evaluate_race.py files for evaluation** <br />
+Set the model_name, run, dataset, variable, out_variable in the file <br />
+model_name='bert' <br />
+run='run1' <br />
+dataset='mimic3' <br />
+variable='race' <br />
+out_variable='race' <br />
+Change the demographic file path in the file <br />
+
+python3 evaluate_race.py > /home/DifferentialImpact/ihm_result/bert_run1/mimic3/race.txt
+
