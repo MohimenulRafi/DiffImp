@@ -3,6 +3,7 @@
 ## Prepare dataset for ML models ##
 
 We construct the benchmark machine learning datasets from the MIMIC III clinical database following https://github.com/YerevaNN/mimic3-benchmarks
+The eICU benchmark dataset was used from https://github.com/mostafaalishahi/eICU_Benchmark
 
 ## BERT Instruction ##
 
@@ -44,3 +45,12 @@ Change the demographic file path in the file <br />
 
 python3 evaluate_race.py > /home/DifferentialImpact/ihm_result/bert_run1/mimic3/race.txt
 
+## LSTM Instruction ##
+
+**Train the model** <br />
+python -um mimic3models.in_hospital_mortality.main --network mimic3models/keras_models/lstm.py --dim 16 --timestep 1.0 --depth 2 --dropout 0.3 --mode test --batch_size 8 --output_dir /home/DifferentialImpact/Prediction/lstm_run1/mimic3/nodemography --load_state /home/DifferentialImpact/SavedModel/run1/mimic3/nodemography/keras_states/k_lstm.n16.d0.3.dep2.bs8.ts1.0.epoch29.test0.28126448079767913.state
+
+**Test the model** <br />
+python -um mimic3models.in_hospital_mortality.main --network mimic3models/keras_models/lstm.py --dim 16 --timestep 1.0 --depth 2 --dropout 0.3 --mode test --batch_size 8 --output_dir /home/DifferentialImpact/Prediction/lstm_run1/mimic3/nodemography --load_state /home/DifferentialImpact/SavedModel/run1/mimic3/nodemography/keras_states/k_lstm.n16.d0.3.dep2.bs8.ts1.0.epoch29.test0.28126448079767913.state
+
+**Run threshold.py, write_label.py, evaluate_gender.py, evaluate_race.py files similarly as in BERT**
