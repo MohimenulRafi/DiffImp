@@ -90,7 +90,7 @@ print('Ranked thresholds: ', str(tr_list))
 preds=[]
 test_y=[]
 text_list=[]
-f=open('/home/DifferentialImpact/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/prediction_probs.txt', 'r')
+f=open('/home/DifferentialImpact/Prediction/'+model_name+'_'+run+'/'+dataset+'/'+variable+'/valid_prediction_probs.txt', 'r')
 #f=open('/home/Foundation/Prediction/'+model_dataset+'/prediction_probs_label_text.txt', 'r')
 for line in f:
     line=line.strip()
