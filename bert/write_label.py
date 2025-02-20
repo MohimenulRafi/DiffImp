@@ -42,10 +42,6 @@ def writeLabel(f, best_threshold, pred_dict, pred_list):
 # eicu: 0.19 for no demography, 0.18 for gender, 0.13 for race, 0.12 for gender race
 threshold=0.12
 
-'''pred_dict_1={}
-f1=open('/home/mohimenul/Differential_Bias/no_demography/test_predictions/k_lstm.n16.d0.3.dep2.bs8.ts1.0.epoch28.test0.2843273498238169.state.csv', 'r')
-writeLabel(f1, threshold_1, pred_dict_1)
-f1.close()'''
 
 model_name='bert'
 run='run3'
@@ -63,7 +59,7 @@ fw=open('/home/DifferentialImpact/ihm_prediction/'+model_name+'_'+run+'/'+datase
 fw.write('Prediction,TrueLabel,CorrectFlag,Prob\n')
 
 '''demography_dict={}
-f=open('/home/mohimenul/Data/mimic 3/ihm_demography/demography.csv', 'r')
+f=open('/home/Data/mimic 3/ihm_demography/demography.csv', 'r')
 
 first_line=True
 for line in f:
