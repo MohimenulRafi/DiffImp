@@ -12,4 +12,7 @@ The LSTM model consisted of an input layer (76 dimensions), a masking layer (76 
   <tr>
     <th>BERT</th> <th>Transformer</th> <th>LSTM</th>
   </tr>
+  <tr>
+    <td>Transformer blocks: 12 <br> Attention heads: 12 <br> Hidden units: 768 <br> Parameters: 110M <br> Fully connected layer units: 128</td> <td>Transformer blocks: 3</td> <td>--</td>
+  </tr>
 </table>
