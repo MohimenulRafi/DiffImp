@@ -20,3 +20,4 @@ The LSTM model consisted of an input layer (76 dimensions), a masking layer (76 
     <td>-- <br> Masking layer unit: 76 <br> Bidirectional & LSTM layer: 16 <br> Parameters: 7.5K <br> Dense layer units: 1</td>
   </tr>
 </table>
+**Table 1: Summary of the model architectures**
