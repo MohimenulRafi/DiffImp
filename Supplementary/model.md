@@ -5,6 +5,33 @@ We use the BERT-base model that has 12 layers of a transformer encoder block. Ea
 The Transformer model consists of 3 transformer blocks, each incorporating multi-head attention (4 heads), feedforward layers (hidden dimension: 16), and residual connections, with dropout (0.3) and batch normalization to enhance stability and generalization. The architecture begins with an input layer (76 features) followed by a masking layer to handle missing values. A positional encoding layer is added to retain sequence order information. Each transformer block consists of layer normalization, multi-head self-attention, residual connections, and a two-layer feedforward network. The model employs additive skip connections between layers to preserve information flow and prevent vanishing gradients. Following the transformer blocks, global average pooling is applied to reduce dimensionality, followed by batch normalization and dropout for regularization. The final prediction layers consist of a dense layer (64 neurons) with ReLU activation and an output layer (1 neuron) with sigmoid activation for binary classification. The model contains a total of 293,993 parameters, with 293,841 trainable parameters. <br /><br />
 The LSTM model consisted of an input layer (76 dimensions), a masking layer (76 dimensions), a bidirectional LSTM layer (16 dimensions), an LSTM layer (16 dimensions), a dropout layer (0.3), and finally a dense layer (1 dimension). In total, the LSTM had 7,569 trainable parameters. <br /><br />
 
+<table>
+  <tr>
+    <th colspan="3" style="text-align:center;">Table S1 — Demographic Overview</th>
+  </tr>
+  <tr>
+    <th>Class</th>
+    <th>Mean Age</th>
+    <th>Sample Size</th>
+  </tr>
+  <tr>
+    <td>C1</td>
+    <td>12.3</td>
+    <td>302</td>
+  </tr>
+  <tr>
+    <td>C2</td>
+    <td>14.5</td>
+    <td>295</td>
+  </tr>
+  <tr>
+    <td>C3</td>
+    <td>13.8</td>
+    <td>284</td>
+  </tr>
+</table>
+
+
 | Model Architecture |
 |----------------------|
 | BERT| Transformer | LSTM |
