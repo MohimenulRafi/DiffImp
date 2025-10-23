@@ -7,33 +7,9 @@ The LSTM model consisted of an input layer (76 dimensions), a masking layer (76 
 
 <table>
   <tr>
-    <th colspan="3" style="text-align:center;">Table S1 — Demographic Overview</th>
+    <th colspan="3">Model Architecture</th>
   </tr>
   <tr>
-    <th>Class</th>
-    <th>Mean Age</th>
-    <th>Sample Size</th>
-  </tr>
-  <tr>
-    <td>C1</td>
-    <td>12.3</td>
-    <td>302</td>
-  </tr>
-  <tr>
-    <td>C2</td>
-    <td>14.5</td>
-    <td>295</td>
-  </tr>
-  <tr>
-    <td>C3</td>
-    <td>13.8</td>
-    <td>284</td>
+    <th>BERT</th> <th>Transformer</th> <th>LSTM</th>
   </tr>
 </table>
-
-
-| Model Architecture |
-|----------------------|
-| BERT| Transformer | LSTM |
-|-----------|-----------|-----------|
-|sdasda|fsfsfsf|gregdgde|
