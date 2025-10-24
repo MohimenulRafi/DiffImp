@@ -24,7 +24,7 @@
   <tr><td>pH</td><td>Continuous</td></tr>
 </table>
 
-**Table 2: List of variables used for training and testing the models**
+**Table 2: List of variables used for training and testing the models.**
 
 <br />
 
@@ -67,23 +67,23 @@
   <tr><td>Test</td><td>88.35</td><td>88.94</td><td>11.65</td><td>11.06</td><td>90.28</td><td>88.29</td><td>90.91</td><td>87.20</td><td>9.72</td><td>11.71</td><td>9.09</td><td>12.80</td></tr>
 </table>
 
-**Table 3: Percentages of survival and death in data splits for gender and race groups**
+**Table 3: Percentages of survival and death in data splits for gender and race groups.**
 
 <br />
 
 <table>
   <tr>
-    <th colspan="7">MIMIC III (Death → Survive)</th>
-    <th colspan="7">MIMIC III (Survive → Death)</th>
+    <th colspan="7">MIMIC III (Death to Survival)</th>
+    <th colspan="7">MIMIC III (Survival to Death)</th>
   </tr>
   <tr>
     <th>Models</th>
     <th colspan="2">Correct</th>
-    <th colspan="2">Wrong</th>
-    <th colspan="2">Survival Rate (Train)</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Survival Rate (Training Set)</th>
     <th colspan="2">Correct</th>
-    <th colspan="2">Wrong</th>
-    <th colspan="2">Death Rate (Train)</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Death Rate (Training Set)</th>
   </tr>
   <tr>
     <th></th><th>Male</th><th>Female</th><th>Male</th><th>Female</th><th>Male</th><th>Female</th>
@@ -93,15 +93,15 @@
   <tr><td>LSTM</td><td>2.67</td><td>3.5</td><td>0.89</td><td>0.97</td><td>88.86</td><td>87.44</td><td>0.59</td><td>0.35</td><td>1.34</td><td>1.07</td><td>11.14</td><td>12.56</td></tr>
   <tr><td>Transformer</td><td>2.69</td><td>5.07</td><td>1.76</td><td>2.29</td><td></td><td></td><td>1.22</td><td>1.23</td><td>3.47</td><td>2.71</td><td></td><td></td></tr>
 
-  <tr><th colspan="7">eICU (Death → Survive)</th><th colspan="7">eICU (Survive → Death)</th></tr>
+  <tr><th colspan="7">eICU (Death to Survival)</th><th colspan="7">eICU (Survival to Death)</th></tr>
   <tr>
     <th>Models</th>
     <th colspan="2">Correct</th>
-    <th colspan="2">Wrong</th>
-    <th colspan="2">Survival Rate (Train)</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Survival Rate (Training Set)</th>
     <th colspan="2">Correct</th>
-    <th colspan="2">Wrong</th>
-    <th colspan="2">Death Rate (Train)</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Death Rate (Training Set)</th>
   </tr>
   <tr>
     <th></th><th>Male</th><th>Female</th><th>Male</th><th>Female</th><th>Male</th><th>Female</th>
@@ -112,7 +112,7 @@
   <tr><td>Transformer</td><td>2.98</td><td>2.77</td><td>1.36</td><td>0.9</td><td></td><td></td><td>0.76</td><td>0.97</td><td>2.42</td><td>5.28</td><td></td><td></td></tr>
 </table>
 
-**Table 4: XYZ**
+**Table 4: Percentages of change in prediction for gender groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
 
 <br />
 
