@@ -24,4 +24,4 @@
   <tr><td>pH</td><td>Continuous</td></tr>
 </table>
 
-**List of variables used for training and testing the models**
+**Table 2: List of variables used for training and testing the models**
