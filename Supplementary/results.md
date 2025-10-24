@@ -48,17 +48,17 @@
 
 <table>
   <tr>
-    <th colspan="13">MIMIC III (Death → Survive)</th>
-    <th colspan="13">MIMIC III (Survive → Death)</th>
+    <th colspan="13">MIMIC III (Death to Survival)</th>
+    <th colspan="13">MIMIC III (Survival to Death)</th>
   </tr>
   <tr>
     <th>Models</th>
     <th colspan="4">Correct</th>
-    <th colspan="4">Wrong</th>
-    <th colspan="4">Survival Rate (Train)</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Survival Rate (Training Set)</th>
     <th colspan="4">Correct</th>
-    <th colspan="4">Wrong</th>
-    <th colspan="4">Death Rate (Train)</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Death Rate (Training Set)</th>
   </tr>
   <tr>
     <th></th>
@@ -73,15 +73,15 @@
   <tr><td>LSTM</td><td>3.7</td><td>3.02</td><td>7.13</td><td>9.7</td><td>6.88</td><td>0.84</td><td>1.03</td><td>1.82</td><td>87.81</td><td>88.95</td><td>93.04</td><td>92.62</td><td>0</td><td>0.49</td><td>0.11</td><td>0</td><td>0</td><td>1.37</td><td>0.69</td><td>0</td><td>12.19</td><td>11.05</td><td>6.96</td><td>7.38</td></tr>
   <tr><td>Transformer</td><td>3.7</td><td>2.68</td><td>4.71</td><td>3.94</td><td>1.06</td><td>1.46</td><td>2.76</td><td>2.73</td><td></td><td></td><td></td><td></td><td>3.17</td><td>0.72</td><td>0.23</td><td>0</td><td>0.53</td><td>2.16</td><td>1.61</td><td>0.3</td><td></td><td></td><td></td><td></td></tr>
 
-  <tr><th colspan="13">eICU (Death → Survive)</th><th colspan="13">eICU (Survive → Death)</th></tr>
+  <tr><th colspan="13">eICU (Death to Survival)</th><th colspan="13">eICU (Survival to Death)</th></tr>
   <tr>
     <th>Models</th>
     <th colspan="4">Correct</th>
-    <th colspan="4">Wrong</th>
-    <th colspan="4">Survival Rate (Train)</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Survival Rate (Training Set)</th>
     <th colspan="4">Correct</th>
-    <th colspan="4">Wrong</th>
-    <th colspan="4">Death Rate (Train)</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Death Rate (Training Set)</th>
   </tr>
   <tr>
     <th></th>
