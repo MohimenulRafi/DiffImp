@@ -45,3 +45,58 @@
 **Table 4: Percentages of change in prediction for gender groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
 
 <br />
+
+<table>
+  <tr>
+    <th colspan="13">MIMIC III (Death → Survive)</th>
+    <th colspan="13">MIMIC III (Survive → Death)</th>
+  </tr>
+  <tr>
+    <th>Models</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Wrong</th>
+    <th colspan="4">Survival Rate (Train)</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Wrong</th>
+    <th colspan="4">Death Rate (Train)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+  </tr>
+  <tr><td>BERT</td><td>3.17</td><td>4.35</td><td>7.13</td><td>10</td><td>1.59</td><td>1.06</td><td>2.64</td><td>1.21</td><td></td><td></td><td></td><td></td><td>0.53</td><td>1.5</td><td>0.92</td><td>0.3</td><td>8.47</td><td>6.85</td><td>1.95</td><td>2.12</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>LSTM</td><td>3.7</td><td>3.02</td><td>7.13</td><td>9.7</td><td>6.88</td><td>0.84</td><td>1.03</td><td>1.82</td><td>87.81</td><td>88.95</td><td>93.04</td><td>92.62</td><td>0</td><td>0.49</td><td>0.11</td><td>0</td><td>0</td><td>1.37</td><td>0.69</td><td>0</td><td>12.19</td><td>11.05</td><td>6.96</td><td>7.38</td></tr>
+  <tr><td>Transformer</td><td>3.7</td><td>2.68</td><td>4.71</td><td>3.94</td><td>1.06</td><td>1.46</td><td>2.76</td><td>2.73</td><td></td><td></td><td></td><td></td><td>3.17</td><td>0.72</td><td>0.23</td><td>0</td><td>0.53</td><td>2.16</td><td>1.61</td><td>0.3</td><td></td><td></td><td></td><td></td></tr>
+
+  <tr><th colspan="13">eICU (Death → Survive)</th><th colspan="13">eICU (Survive → Death)</th></tr>
+  <tr>
+    <th>Models</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Wrong</th>
+    <th colspan="4">Survival Rate (Train)</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Wrong</th>
+    <th colspan="4">Death Rate (Train)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+  </tr>
+  <tr><td>BERT</td><td>6.02</td><td>5.17</td><td>5.86</td><td>6.4</td><td>0</td><td>1.06</td><td>0.88</td><td>0.53</td><td></td><td></td><td></td><td></td><td>0</td><td>0.8</td><td>0.81</td><td>1.07</td><td>2.31</td><td>3.9</td><td>4.38</td><td>3.47</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>LSTM</td><td>1.85</td><td>1.85</td><td>2.15</td><td>1.6</td><td>0</td><td>0.52</td><td>0.74</td><td>0.53</td><td>87.68</td><td>88.31</td><td>90.22</td><td>88.55</td><td>0</td><td>0.71</td><td>0.47</td><td>0.27</td><td>3.7</td><td>2.37</td><td>1.41</td><td>1.87</td><td>12.32</td><td>11.69</td><td>9.78</td><td>11.45</td></tr>
+  <tr><td>Transformer</td><td>0.46</td><td>2.55</td><td>4.11</td><td>1.87</td><td>0.93</td><td>1.02</td><td>0.81</td><td>0.27</td><td></td><td></td><td></td><td></td><td>0.46</td><td>0.96</td><td>0.54</td><td>0.8</td><td>0.93</td><td>3.17</td><td>1.62</td><td>1.87</td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+**Table 5: Percentages of change in prediction for race groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
+
+<br />
