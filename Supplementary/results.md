@@ -1,6 +1,6 @@
 ## Results ##
 **Demographic Effects on Model Performance**
-![demographic_effect](Supplementary/Figures/performance_heatmap.png)
+![demographic effect](Supplementary/Figures/performance_heatmap.png)
 
 **Prediction Change Analysis**
 
