@@ -1,4 +1,7 @@
 ## Results ##
+**Demographic Effects on Model Performance**
+![demographic_effect](DiffImp/Supplementary/performance_heatmap.png)
+
 **Prediction Change Analysis**
 
 <table>
