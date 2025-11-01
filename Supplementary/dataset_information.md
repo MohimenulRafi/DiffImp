@@ -24,7 +24,7 @@
   <tr><td>pH</td><td>Continuous</td></tr>
 </table>
 
-**Table 2: List of variables used for training and testing the models.**
+**Table S2: List of variables used for training and testing the models.**
 
 <br />
 
@@ -67,7 +67,7 @@
   <tr><td>Test</td><td>88.35</td><td>88.94</td><td>11.65</td><td>11.06</td><td>90.28</td><td>88.29</td><td>90.91</td><td>87.20</td><td>9.72</td><td>11.71</td><td>9.09</td><td>12.80</td></tr>
 </table>
 
-**Table 3: Percentages of survival and death in data splits for gender and race groups.**
+**Table S3: Percentages of survival and death in data splits for gender and race groups.**
 
 <br />
 
