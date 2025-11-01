@@ -5,12 +5,14 @@
 **Figure S1: Performance evaluation of models on the MIMIC III and eICU dataset based on demographic variables. Each subfigure (a-f) presents the performance of four configurations for each model and dataset. The color scale maps the metric values to intensity. The mean performance scores are calculated from three independent trials. Rec, Prec, F1, Bal Acc, MCC, AUC, and Acc represent recall, precision, F1 score, balanced accuracy, Mathews correlation coefficient, the area under receiver operating curve, and accuracy, respectively. C0 and C1 represent class 0 (survival) and class 1 (death), respectively.**
 
 <br />
+
 **Performance Comparison Based on Subgroups**
 
 ![subgroups_eicu](Figures/subgroups_eicu.png)
 **Figure S2: Comparison of model performance on eICU data for subgroups when demographic information is added as a single attribute. Subfigures a and b present the performance for male and female patients, respectively, when gender is added. Subfigures c to f present performance for Asian, White, Black, and Hispanic patients, respectively, when race is added. Bars represent the mean metric values (from three independent trials) after adding gender or race information, with error bars showing standard deviations. C1 represents class 1 (death). The dashed line shows results for ``no demography'' setting.**
 
 <br />
+
 **Prediction Change Analysis**
 
 <table>
