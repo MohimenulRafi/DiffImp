@@ -4,6 +4,9 @@
 ![demographic effect](Figures/performance_heatmap.png)
 **Figure S1: Performance evaluation of models on the MIMIC III and eICU dataset based on demographic variables. Each subfigure (a-f) presents the performance of four configurations for each model and dataset. The color scale maps the metric values to intensity. The mean performance scores are calculated from three independent trials. Rec, Prec, F1, Bal Acc, MCC, AUC, and Acc represent recall, precision, F1 score, balanced accuracy, Mathews correlation coefficient, the area under receiver operating curve, and accuracy, respectively. C0 and C1 represent class 0 (survival) and class 1 (death), respectively.**
 
+![subgroups_eicu](Figures/subgroups_eicu.png)
+**Figure S2: Comparison of model performance on eICU data for subgroups when demographic information is added as a single attribute. Subfigures a and b present the performance for male and female patients, respectively, when gender is added. Subfigures c to f present performance for Asian, White, Black, and Hispanic patients, respectively, when race is added. Bars represent the mean metric values (from three independent trials) after adding gender or race information, with error bars showing standard deviations. C1 represents class 1 (death). The dashed line shows results for ``no demography'' setting.**
+
 **Prediction Change Analysis**
 
 <table>
@@ -47,7 +50,7 @@
   <tr><td>Transformer</td><td>2.98</td><td>2.77</td><td>1.36</td><td>0.9</td><td></td><td></td><td>0.76</td><td>0.97</td><td>2.42</td><td>5.28</td><td></td><td></td></tr>
 </table>
 
-**Table 4: Percentages of change in prediction for gender groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
+**Table S4: Percentages of change in prediction for gender groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
 
 <br />
 
@@ -102,6 +105,6 @@
   <tr><td>Transformer</td><td>0.46</td><td>2.55</td><td>4.11</td><td>1.87</td><td>0.93</td><td>1.02</td><td>0.81</td><td>0.27</td><td></td><td></td><td></td><td></td><td>0.46</td><td>0.96</td><td>0.54</td><td>0.8</td><td>0.93</td><td>3.17</td><td>1.62</td><td>1.87</td><td></td><td></td><td></td><td></td></tr>
 </table>
 
-**Table 5: Percentages of change in prediction for race groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
+**Table S5: Percentages of change in prediction for race groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
 
 <br />
