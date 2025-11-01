@@ -20,7 +20,7 @@ The LSTM model consisted of an input layer (76 dimensions), a masking layer (76 
   </tr>
 </table>
 
-**Table 1: Summary of the model architectures**
+**Table S1: Summary of the model architectures**
 
 ## Hardware Detail
 The LSTM model was trained using CentOS Linux (release 7.9.2009) system, x86-64 architecture, Intel Xeon CPU (2.40GHz, 40 cores), 125 GB RAM (19 GB swap memory). The transformer and the BERT model were trained using an Ubuntu (22.04.4 LTS) system, x86-64 architecture, equipped with an Intel Xeon CPU (2.40GHz, 8 cores), 32 GB RAM (16 GB swap memory), and a Tesla P40 GPU with 24GB VRAM. The models were trained on the GPU using CUDA (version 12.4).
