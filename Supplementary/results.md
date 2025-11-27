@@ -25,7 +25,6 @@
     <th colspan="2">Correct</th>
     <th colspan="2">Incorrect</th>
     <th colspan="2">Survival Rate (Training Set)</th>
-    <th>Models</th>
     <th colspan="2">Correct</th>
     <th colspan="2">Incorrect</th>
     <th colspan="2">Death Rate (Training Set)</th>
@@ -34,7 +33,7 @@
     <th></th><th>Male</th><th>Female</th><th>Male</th><th>Female</th><th>Male</th><th>Female</th>
     <th>Male</th><th>Female</th><th>Male</th><th>Female</th><th>Male</th><th>Female</th>
   </tr>
-  <tr><td>BERT</td><td>3.17</td><td>3.54</td><td>0.98</td><td>1.07</td><td></td><td></td><td>BERT</td><td>1.28</td><td>1.76</td><td>7.03</td><td>7.32</td><td></td><td></td></tr>
+  <tr><td>BERT</td><td>3.17</td><td>3.54</td><td>0.98</td><td>1.07</td><td></td><td></td><td>1.28</td><td>1.76</td><td>7.03</td><td>7.32</td><td></td><td></td></tr>
   <tr><td>LSTM</td><td>2.67</td><td>3.5</td><td>0.89</td><td>0.97</td><td>88.86</td><td>87.44</td><td>0.59</td><td>0.35</td><td>1.34</td><td>1.07</td><td>11.14</td><td>12.56</td></tr>
   <tr><td>Transformer</td><td>2.69</td><td>5.07</td><td>1.76</td><td>2.29</td><td></td><td></td><td>1.22</td><td>1.23</td><td>3.47</td><td>2.71</td><td></td><td></td></tr>
 
