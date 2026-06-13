@@ -206,3 +206,97 @@
 </table>
 
 **Table S6: Percentages of change in prediction for gender groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU. The first row represents the results when the BERT model is trained and tested with gender. The second row represents the results when the BERT model is trained without any demography, and gender is added with the clinical features during testing only.**
+
+<br />
+
+<table>
+  <tr>
+    <th colspan="13">MIMIC III (Death to Survival)</th>
+    <th colspan="13">MIMIC III (Survival to Death)</th>
+  </tr>
+  <tr>
+    <th>Models</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Survival Rate (Training Set)</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Death Rate (Training Set)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+  </tr>
+
+  <tr>
+    <td>BERT (trained with race)</td>
+    <td>3.17</td><td>4.35</td><td>7.13</td><td>10.00</td>
+    <td>1.59</td><td>1.06</td><td>2.64</td><td>1.21</td>
+    <td>87.81</td><td>88.95</td><td>93.04</td><td>92.62</td>
+    <td>0.53</td><td>1.50</td><td>0.92</td><td>0.30</td>
+    <td>8.47</td><td>6.85</td><td>1.95</td><td>2.12</td>
+    <td>12.19</td><td>11.05</td><td>6.96</td><td>7.38</td>
+  </tr>
+
+  <tr>
+    <td>BERT (trained without race)</td>
+    <td>6.35</td><td>5.35</td><td>5.52</td><td>8.48</td>
+    <td>2.65</td><td>1.36</td><td>0.69</td><td>0.91</td>
+    <td>87.81</td><td>88.95</td><td>93.04</td><td>92.62</td>
+    <td>2.65</td><td>1.62</td><td>2.30</td><td>2.12</td>
+    <td>12.17</td><td>6.44</td><td>8.85</td><td>8.48</td>
+    <td>12.19</td><td>11.05</td><td>6.96</td><td>7.38</td>
+  </tr>
+
+  <tr>
+    <th colspan="13">eICU (Death to Survival)</th>
+    <th colspan="13">eICU (Survival to Death)</th>
+  </tr>
+
+  <tr>
+    <th>Models</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Survival Rate (Training Set)</th>
+    <th colspan="4">Correct</th>
+    <th colspan="4">Incorrect</th>
+    <th colspan="4">Death Rate (Training Set)</th>
+  </tr>
+
+  <tr>
+    <th></th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+    <th>Asian</th><th>White</th><th>Black</th><th>Hispanic</th>
+  </tr>
+
+  <tr>
+    <td>BERT (trained with race)</td>
+    <td>6.02</td><td>5.17</td><td>5.86</td><td>6.40</td>
+    <td>0.00</td><td>1.06</td><td>0.88</td><td>0.53</td>
+    <td>87.68</td><td>88.31</td><td>90.22</td><td>88.55</td>
+    <td>0.00</td><td>0.80</td><td>0.81</td><td>1.07</td>
+    <td>2.31</td><td>3.90</td><td>4.38</td><td>3.47</td>
+    <td>12.32</td><td>11.69</td><td>9.78</td><td>11.45</td>
+  </tr>
+
+  <tr>
+    <td>BERT (trained without race)</td>
+    <td>5.09</td><td>4.04</td><td>4.38</td><td>4.27</td>
+    <td>0.00</td><td>0.85</td><td>0.40</td><td>0.53</td>
+    <td>87.68</td><td>88.31</td><td>90.22</td><td>88.55</td>
+    <td>0.00</td><td>1.33</td><td>0.67</td><td>1.07</td>
+    <td>4.63</td><td>6.85</td><td>8.01</td><td>6.40</td>
+    <td>12.32</td><td>11.69</td><td>9.78</td><td>11.45</td>
+  </tr>
+</table>
+
+**Table S7: Percentages of change in prediction for race groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU. The first row represents the results when the BERT model is trained and tested with race. The second row represents the results when the BERT model is trained without any demography, and race is added with the clinical features during testing only.**
