@@ -114,3 +114,95 @@
 **Table S5: Percentages of change in prediction for race groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU.**
 
 <br />
+
+<table>
+  <tr>
+    <th colspan="7">MIMIC III (Death to Survival)</th>
+    <th colspan="7">MIMIC III (Survival to Death)</th>
+  </tr>
+  <tr>
+    <th>Models</th>
+    <th colspan="2">Correct</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Survival Rate (Training Set)</th>
+    <th colspan="2">Correct</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Death Rate (Training Set)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+  </tr>
+
+  <tr>
+    <td>BERT (trained with gender)</td>
+    <td>3.17</td><td>3.54</td>
+    <td>0.98</td><td>1.07</td>
+    <td>88.86</td><td>87.44</td>
+    <td>1.28</td><td>1.76</td>
+    <td>7.03</td><td>7.32</td>
+    <td>11.14</td><td>12.56</td>
+  </tr>
+
+  <tr>
+    <td>BERT (trained without gender)</td>
+    <td>4.45</td><td>5.47</td>
+    <td>0.95</td><td>1.32</td>
+    <td>88.86</td><td>87.44</td>
+    <td>2.02</td><td>2.22</td>
+    <td>9.26</td><td>9.66</td>
+    <td>11.14</td><td>12.56</td>
+  </tr>
+
+  <tr>
+    <th colspan="7">eICU (Death to Survival)</th>
+    <th colspan="7">eICU (Survival to Death)</th>
+  </tr>
+
+  <tr>
+    <th>Models</th>
+    <th colspan="2">Correct</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Survival Rate (Training Set)</th>
+    <th colspan="2">Correct</th>
+    <th colspan="2">Incorrect</th>
+    <th colspan="2">Death Rate (Training Set)</th>
+  </tr>
+
+  <tr>
+    <th></th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+    <th>Male</th><th>Female</th>
+  </tr>
+
+  <tr>
+    <td>BERT (trained with gender)</td>
+    <td>6.10</td><td>6.97</td>
+    <td>1.63</td><td>1.40</td>
+    <td>88.73</td><td>88.31</td>
+    <td>0.47</td><td>0.60</td>
+    <td>3.36</td><td>2.93</td>
+    <td>11.27</td><td>11.69</td>
+  </tr>
+
+  <tr>
+    <td>BERT (trained without gender)</td>
+    <td>5.63</td><td>5.38</td>
+    <td>1.32</td><td>1.01</td>
+    <td>88.73</td><td>88.31</td>
+    <td>0.61</td><td>0.55</td>
+    <td>3.07</td><td>3.75</td>
+    <td>11.27</td><td>11.69</td>
+  </tr>
+</table>
+
+**Table S6: Percentages of change in prediction for gender groups. The table shows the percentages of correct and incorrect prediction changes by the models from death to survival and from survival to death in MIMIC III and eICU. The first row represents the results when the BERT model is trained and tested with gender. The second row represents the results when the BERT model is trained without any demography, and gender is added with the clinical features during testing only.**
