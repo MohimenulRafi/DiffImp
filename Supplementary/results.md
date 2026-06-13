@@ -140,7 +140,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained with gender)</td>
+    <td>BERT</td>
     <td>3.17</td><td>3.54</td>
     <td>0.98</td><td>1.07</td>
     <td>88.86</td><td>87.44</td>
@@ -150,7 +150,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained without gender)</td>
+    <td>BERT (Gender added in test only)</td>
     <td>4.45</td><td>5.47</td>
     <td>0.95</td><td>1.32</td>
     <td>88.86</td><td>87.44</td>
@@ -185,7 +185,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained with gender)</td>
+    <td>BERT</td>
     <td>6.10</td><td>6.97</td>
     <td>1.63</td><td>1.40</td>
     <td>88.73</td><td>88.31</td>
@@ -195,7 +195,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained without gender)</td>
+    <td>BERT (Gender added in test only)</td>
     <td>5.63</td><td>5.38</td>
     <td>1.32</td><td>1.01</td>
     <td>88.73</td><td>88.31</td>
