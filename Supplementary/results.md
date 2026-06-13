@@ -234,7 +234,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained with race)</td>
+    <td>BERT</td>
     <td>3.17</td><td>4.35</td><td>7.13</td><td>10.00</td>
     <td>1.59</td><td>1.06</td><td>2.64</td><td>1.21</td>
     <td>87.81</td><td>88.95</td><td>93.04</td><td>92.62</td>
@@ -244,7 +244,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained without race)</td>
+    <td>BERT (Race added in test only)</td>
     <td>6.35</td><td>5.35</td><td>5.52</td><td>8.48</td>
     <td>2.65</td><td>1.36</td><td>0.69</td><td>0.91</td>
     <td>87.81</td><td>88.95</td><td>93.04</td><td>92.62</td>
@@ -279,7 +279,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained with race)</td>
+    <td>BERT</td>
     <td>6.02</td><td>5.17</td><td>5.86</td><td>6.40</td>
     <td>0.00</td><td>1.06</td><td>0.88</td><td>0.53</td>
     <td>87.68</td><td>88.31</td><td>90.22</td><td>88.55</td>
@@ -289,7 +289,7 @@
   </tr>
 
   <tr>
-    <td>BERT (trained without race)</td>
+    <td>BERT (Race added in test only)</td>
     <td>5.09</td><td>4.04</td><td>4.38</td><td>4.27</td>
     <td>0.00</td><td>0.85</td><td>0.40</td><td>0.53</td>
     <td>87.68</td><td>88.31</td><td>90.22</td><td>88.55</td>
